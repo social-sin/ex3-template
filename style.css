@@ -1,0 +1,82 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #B4DAF0;
+  --color-text-main: #000000;
+  --color-primary: #F0A590;
+  --wrapper-height: 87vh;
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "Montserrat";
+  --font-family-header: "Montserrat";
+}
+
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+}
+
+/* Import fonts */
+@font-face {
+  font-family: Montserrat;
+  src: url("https://fonts.google.com/specimen/Montserrat?category=Sans+Serif")
+    format("opentype");
+}
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url("https://fonts.google.com/specimen/Montserrat?category=Sans+Serif")
+    format("opentype");
+}
+
+.divider {
+  padding: 0 1rem;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  background-color: var(--color-bg);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: #2800FF;
+  font-family: Montserrat, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 105%;
+  margin: 0;
+}
+
+/* Heading */
+body h1 {
+  color: #F5245F;
+  font-family: Montserrat, sans-serif;
+}
+
